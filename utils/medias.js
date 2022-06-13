@@ -8,6 +8,7 @@ export function getStrapiMedia(url) {
   }
 
   return `${
-    process.env.NEXT_PUBLIC_STRAPI_API_URL || "http://localhost:1337"
+    process.env.NEXT_PUBLIC_STRAPI_API_URL ||
+    "https://cms.gallant-wiles.37-140-242-109.plesk.page"
   }${url}`
 }
