@@ -71,14 +71,14 @@ export async function getStaticProps({ params }) {
   return { props: { product } }
 }
 
-export async function getStaticPaths() {
-  const products = await getProducts()
-  return {
-    paths: products.map((_product) => {
-      return {
-        params: { slug: _product.attributes.slug },
-      }
-    }),
-    fallback: true,
-  }
-}
+// export async function getStaticPaths() {
+//   const products = await getProducts()
+//   return {
+//     paths: products.map((_product) => {
+//       return {
+//         params: { slug: _product.attributes.slug },
+//       }
+//     }),
+//     fallback: true,
+//   }
+// }
